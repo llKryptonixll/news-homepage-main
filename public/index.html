@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body class="text-base font-inter bg-off_white min-[1400px]:pl-40 min-[1400px]:pr-40 sm:pl-20 sm:pr-20 pl-6 pr-6 sm:pt-24 pt-10 sm:pb-24 pb-10 grid gap-14">
+
+  <aside id="sidebar" class="opacity-0 grid -z-10 justify-end fixed top-0 bg-[hsla(240,100%,5%,50%)] w-full h-full left-0 overflow-y-auto overflow-x-hidden transition-[250ms]">
+    <nav id="sidebar-navigation" class="bg-white w-[320px] p-10 grid content-start gap-20 relative translate-x-[320px] transition-[500ms]">
+      <button id="close-sidebar-btn" aria-label="close-page-navigation" class="justify-self-end">
+        <img src="images/icon-menu-close.svg" alt="x-icon">
+      </button>
+      <ul class="grid gap-6">
+        <li>
+          <a class="text-very_dark_blue text-xl" href="https://cerri-webdev.com/">Home</a>
+        </li>
+        <li>
+          <a class="text-very_dark_blue text-xl" href="https://cerri-webdev.com/">New</a>
+        </li>
+        <li>
+          <a class="text-very_dark_blue text-xl" href="https://cerri-webdev.com/">Popular</a>
+        </li>
+        <li>
+          <a class="text-very_dark_blue text-xl" href="https://cerri-webdev.com/">Trending</a>
+        </li>
+        <li>
+          <a class="text-very_dark_blue text-xl" href="https://cerri-webdev.com/">Categories</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <header class="flex items-center justify-between">
+    <img src="images/logo.svg" alt="company-logo">
+    <nav>
+      <ul class="md:flex space-x-8 hidden">
+        <li>
+          <a class="text-dark_grayish_blue hover:text-soft_red transition-colors" href="https://cerri-webdev.com/">Home</a>
+        </li>
+        <li>
+          <a class="text-dark_grayish_blue hover:text-soft_red transition-colors" href="https://cerri-webdev.com/">New</a>
+        </li>
+        <li>
+          <a class="text-dark_grayish_blue hover:text-soft_red transition-colors" href="https://cerri-webdev.com/">Popular</a>
+        </li>
+        <li>
+          <a class="text-dark_grayish_blue hover:text-soft_red transition-colors" href="https://cerri-webdev.com/">Trending</a>
+        </li>
+        <li>
+          <a class="text-dark_grayish_blue hover:text-soft_red transition-colors" href="https://cerri-webdev.com/">Categories</a>
+        </li>
+      </ul>
+      <button id="open-sidebar-btn" class="md:hidden block" aria-label="open-page-navigation">
+        <img src="images/icon-menu.svg" alt="bars-icon">
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid gap-20">
+      <div class="xl:flex min-h-[520px] xl:space-x-8 grid xl:gap-0 gap-20">
+        <div class="grid gap-6">
+          <div>
+            <img class="sm:block hidden" src="images/image-web-3-desktop.jpg" alt="web-image">
+            <img class="sm:hidden block" src="images/image-web-3-mobile.jpg" alt="web-image">
+          </div>
+          <div class="lg:flex grid lg:space-x-20 items-center">
+            <header>
+              <h1 class="text-6xl font-extrabold">
+                The Bright 
+                Future of 
+                Web 3.0?
+              </h1>
+            </header>
+            <div class="grid gap-11 w-full max-w-[320px]">
+              <p class="whitespace-pre-line text-dark_grayish_blue ">
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+              </p>
+              <button class="bg-soft_red h-[50px] w-full max-w-[190px] text-off_white text-sm tracking-[5px] font-bold hover:bg-very_dark_blue transition-colors">READ MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-very_dark_blue grid items-center pl-5 pr-5 pt-8 pb-8">
+          <p class="text-soft_orange text-4xl font-bold">New</p>
+          <ul class="overflow-auto max-h-[520px] grid gap-8">
+            <li class="border-b-[1px] border-dark_grayish_blue pb-8 grid">
+              <h2 class="text-off_white font-bold text-xl leading-10 cursor-pointer hover:text-soft_orange transition-colors">Hydrogen VS Electric Cars</h2>
+              <p class="text-grayish_blue leading-6">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+            <li class="border-b-[1px] border-dark_grayish_blue pb-8">
+              <h2 class="text-off_white font-bold text-xl leading-10 cursor-pointer hover:text-soft_orange transition-colors">The Downsides of AI Artistry</h2>
+              <p class="text-grayish_blue leading-6">What are the possible adverse effects of on-demand AI image generation?</p>
+            </li>
+            <li>
+              <h2 class="text-off_white font-bold text-xl leading-10 cursor-pointer hover:text-soft_orange transition-colors">Is VC Funding Drying Up?</h2>
+              <p class="text-grayish_blue leading-6">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-between xl:flex-nowrap flex-wrap xl:space-x-4 gap-10">
+        <div class="flex space-x-6 max-w-[350px]">
+          <img class="w-full max-w-[100px] h-[125px]" src="images/image-retro-pcs.jpg" alt="retro-pcs-image">
+          <div class="grid items-center">
+            <p class="font-bold text-3xl text-grayish_blue">01</p>
+            <h2 class="text-very_dark_blue font-bold text-lg cursor-pointer hover:text-soft_red transition-colors">Reviving Retro PCs</h2>
+            <p class="text-dark_grayish_blue">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="flex space-x-6 max-w-[350px]">
+          <img class="w-full max-w-[100px] h-[125px]" src="images/image-top-laptops.jpg" alt="laptop-keyboard-image">
+          <div class="grid items-center">
+            <p class="font-bold text-3xl text-grayish_blue">02</p>
+            <h2 class="text-very_dark_blue font-bold text-lg cursor-pointer hover:text-soft_red transition-colors">Top 10 Laptops of 2022</h2>
+            <p class="text-dark_grayish_blue">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="flex space-x-6 max-w-[350px]">
+          <img class="w-full max-w-[100px] h-[125px]" src="images/image-gaming-growth.jpg" alt="playstation-controller-image">
+          <div class="grid items-center">
+            <p class="font-bold text-3xl text-grayish_blue">03</p>
+            <h2 class="text-very_dark_blue font-bold text-lg cursor-pointer hover:text-soft_red transition-colors">The Growth of Gaming</h2>
+            <p class="text-dark_grayish_blue">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+</body>
+</html>

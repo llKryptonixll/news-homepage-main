@@ -1,0 +1,14 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i tailwind.css -o ./public/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
